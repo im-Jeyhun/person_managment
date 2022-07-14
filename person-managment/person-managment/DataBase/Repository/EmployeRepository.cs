@@ -74,8 +74,18 @@ namespace person_managment.DataBase.Repository
         {
             return _employees;
         }
+        public static bool IsUserEmailExist(string email)
+        {
+            foreach (Employee employee in _employees)
+            {
+                if (employee.Email == email)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
-    
 
     }
 }
