@@ -70,5 +70,12 @@ namespace person_managment.DataBase.Repository
             return null;
         }
 
+        public static List<Employee> GetAll()
+        {
+            return _employees;
+        }
+
+    
+
     }
 }
