@@ -10,6 +10,8 @@ namespace person_managment.DataBase.Models
     {
         public string Name { get; set; }
         public  int ID { get; }
+        public int Id { get; internal set; }
+
         private static int _idcounter = 1;
         public Adress(string name)
         {
