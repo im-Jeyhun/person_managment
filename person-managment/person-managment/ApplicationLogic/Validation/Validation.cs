@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace person_managment.ApplicationLogic.Validation
 {
-    internal class Validation
+    internal static class Validation
     {
 
-        public static class Validations
-        {
+      
             public static bool IsLengthBetween(string text, int start, int end)
             {
                 return text.Length >= start && text.Length < end;
@@ -29,6 +28,8 @@ namespace person_managment.ApplicationLogic.Validation
                 return false;
             }
 
-        }
+        
+
+        
     }
 }
