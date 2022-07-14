@@ -20,6 +20,31 @@ namespace person_managment.DataBase.Repository
             return newemployee;
         }
 
+        public static List<Employee> Remove(int targetId)
+        {
+          
+            foreach(Employee employee in _employees)
+            {
+                if(employee.Id == targetId)
+                {
+                    _employees.Remove(employee);
+                }
+            }
+           return _employees;
+        }
+
+        public static List<Employee> RemoveAt(int targetId)
+        {
+            for (int i = 0; i < _employees.Count; i++)
+            {
+                if (_employees[i].Id == targetId)
+                {
+                    _employees.RemoveAt(i);
+                }
+            }
+            return _employees;
+        }
+
 
     }
 }
