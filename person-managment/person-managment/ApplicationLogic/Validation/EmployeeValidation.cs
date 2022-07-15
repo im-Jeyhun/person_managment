@@ -68,17 +68,7 @@ namespace person_managment.ApplicationLogic.Validation
             return false;
         }
 
-        public static bool IsValidPassword(string password, string confirmPassword)
-        {
-            if (password == confirmPassword)
-            {
-                return true;
-            }
-
-            Console.WriteLine("Password is not match");
-
-            return false;
-        }
+        
 
 
     }
